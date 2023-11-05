@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Opeoluwa Akinuliola - Portfolio</title>
-		<meta name="keywords" content="">
-		<meta name="description" content="">
+		<meta name="keywords" content="Web Developer, Full-Stack Developer, Front-End Developer, Back-End Developer, Web Design, Web Development, Responsive Design, JavaScript, HTML, CSS, Web Development Portfolio, Web Development Projects, Website Design, Mobile Responsive Design, UI/UX Design, User Interface, User Experience, CMS (Content Management System), E-Commerce Development, SEO Optimization, Cross-Browser Compatibility, Mobile-First Development, Web Application Development, RESTful APIs, Database Design, PHP Development, Python Development, Bootstrap Framework, Agile Development, Git/GitHub, Code Quality, Performance Optimization, Technical Problem Solving, Web Security, Online Portfolio, Freelance Web Developer, Web Developer Blog, Coding Best Practices, Open Source Contributions">
+		<meta name="description" content="Passionate web developer crafting digital dreams with code. Expert in HTML, CSS, JavaScript, and more. Explore my portfolio now!">
 		<meta name="author" content="Opeoluwa Akinuliola">
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
@@ -29,6 +29,9 @@
 			
 			#overlay{
 				background-color:rgba(0,0,0,0.2);
+			}
+			#overlayfoot{
+				background-color:rgba(0,0,0,0.4);
 			}
 		</style>
 	</head>
@@ -149,20 +152,34 @@
 		<!--end-my work slides-->
 		<section id="footer">
 			<div class="row">
-				<div class="col">
-					<h5 id="mycol">OAstounding Web&copy;2023. Opeoluwa Akinuliola</h5>
+				<div class="col text-center text-info mt-3">
+					<h6 id="overlayfoot">Opeoluwa Akinuliola&copy;2023. All Rights Resevered</h6>
 				</div>
 			</div>
 
 		</section>
 		<!--Offcanvas start-->
 		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-		  <div class="offcanvas-header">
-		    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+		  <div class="offcanvas-header bg-dark">
+		    <h5 id="mycol" id="offcanvasRightLabel">PROFILE</h5>
 		    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		  </div>
-		  <div class="offcanvas-body">
-		    ...
+		  <div id="mycol" class="offcanvas-body bg-dark">
+		    <div class="text-center">
+		    	<img src="" class="img-fluid" alt="Opeoluwa Akinuliola Portrait">
+		    	<p>Name: Opeoluwa (xpacebar) Akinuliola</p>
+		    	<p>Founder of OAstounding Web</p>
+		    	<p>Nationality: Nigeria</p>
+		    	<p>Mobile No: 08026633110 (Whatsapp)</p>
+			    <p>Email: opeoluwa007@gmail.com</p>
+			    <p>LinkedIn: [Your LinkedIn Profile]</p>
+			    <p>GitHub: [Your GitHub Profile]</p>
+			    <a href="#" >
+			      <button type="button" class="btn btn-info">RESUME</button>
+			   </a>
+		    </div>
+		    
+
 		  </div>
 		</div>
 		<!--offcanvas end-->
@@ -185,12 +202,11 @@
 		        	<div>
 		        		<textarea class="form-control border-warning" rows="4" placeholder="Message" required></textarea>
 		        	</div>
-		        	
+		        	<div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			        <button class="btn btn-info" type="submit">Send Message</button>  
+			      </div>
 		        </form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Send Message</button>
 		      </div>
 		    </div>
 		  </div>
