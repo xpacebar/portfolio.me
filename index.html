@@ -21,35 +21,23 @@
 				background-attachment:fixed;
 			}
 			#mycol{
-				color:#ffcf8f;
+				color:#fed49a;
 			}
 			.navbar-custom{
-				background-color:#ffcf8f;
+				background-color:#007977;
 			}
 			
 			#overlay{
 				background-color:rgba(0,0,0,0.2);
 			}
-				
-/*
-			<nav class="navbar">
-			<div class="container">
-				<a href="#intro" class="navbar-brand">
-					<img src="" alt="OAstounding Web" class="img-fluid">
-					<span id="mycol">OAstounding Web</span>
-				</a>
-				
-			</div>
-
-		</nav>*/
 		</style>
 	</head>
 	<body id="body">
-		<!--the nav section-->
+		<!--start navigation bar-->
 		<nav class="navbar navbar-expand-xxl">
 			<div class="container-lg">
 				<a class="navbar-brand" href="#intro">
-					<img src="" alt="OAstounding Web" class="img-fluid">
+					<img src="images/logo.png" width="10%" alt="OAstounding Web" >
 					<span id="mycol">OAstounding Web</span>
 				</a>
 				<button class="navbar-toggler ml-auto navbar-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,19 +46,16 @@
 			    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 			        <li class="nav-item">
-			          <a id="mycol" class="nav-link active" aria-current="page" href="#">Home</a>
+			          <a id="mycol" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="#">Profile</a>
 			        </li>
 			        <li class="nav-item">
-			          <a id="mycol" class="nav-link" href="#">Link</a>
-			        </li>
-			        <li class="nav-item">
-			          <a id="mycol" class="nav-link disabled">Disabled</a>
+			          <a id="mycol" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contact Me</a>
 			        </li>
 			      </ul>
 			  </div>
 			</div>
 		</nav>
-
+		<!--end navigarion bar-->
 		<!--start intro section-->
 		<section id="intro">
 			<div id="cont" class="container-lg ">
@@ -81,7 +66,7 @@
 							<div id="mycol" class="fw-light">Full-Stack Web Developer</div>
 						</h1>
 					</div>
-					<!--star-accordion-->
+					<!--start about me-->
 					<div class="col-lg-5">
 						<div class="accordion accordion-flush" id="accordionFlushExample">
 						  <div class="accordion-item">
@@ -126,16 +111,16 @@
 						  </div>
 						</div>
 					</div>
-					<!--end accordion-->
+					<!--end about me-->
 				</div>
 			</div>
 		</section>
 		<!--end intro section-->
-		<!--my portfolio-->
+		<!--start-my work slides-->
 		<section id="myportfolio">
 		<div class=container-lg>
 			<div class="row">
-				<div class="col-lg-7"><!--start col corousel-->
+				<div class="col-lg-7"><!--start col carousel-->
 					<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
@@ -157,16 +142,11 @@
 					    <span class="visually-hidden">Next</span>
 					  </button>
 					</div>
-					<!--end carousel-->
-
-
-
-
-				</div><!--end col corousrl-->
-				
+				</div><!--end col carousel-->
 			</div>
 		</div>
 		</section>
+		<!--end-my work slides-->
 		<section id="footer">
 			<div class="row">
 				<div class="col">
@@ -175,6 +155,47 @@
 			</div>
 
 		</section>
+		<!--Offcanvas start-->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		  <div class="offcanvas-header">
+		    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+		    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		  </div>
+		  <div class="offcanvas-body">
+		    ...
+		  </div>
+		</div>
+		<!--offcanvas end-->
+		<!--start-contact ne Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		        	<div>
+		        		<input class="form-control border-warning" type="text" name="name" placeholder="Name" required>
+		        	</div>
+		        	<div>
+		        		<input class="form-control border-warning" type="email" name="email" placeholder="Email" required>
+		        	</div>
+		        	<div>
+		        		<textarea class="form-control border-warning" rows="4" placeholder="Message" required></textarea>
+		        	</div>
+		        	
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Send Message</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!--end-contact me modal-->
 
 
 		<script src="bootstrap/js/bootstrap.min.js"></script>
