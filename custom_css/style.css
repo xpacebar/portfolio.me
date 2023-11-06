@@ -1,0 +1,26 @@
+#body{
+	box-sizing:border-box;
+	margin:0;
+	background-image:url("../images/background.jpg");
+	background-size:cover;
+	background=position:fixed;
+	background-attachment:fixed;
+}
+h1, h5, h6{
+	font-family:'Amatic SC', sans-serif;
+}
+p{
+	font-family: 'Sofia Sans Condensed', sans-serif;
+}
+#mycol{
+	color:#f8f7ff;
+}
+.navbar-custom{
+	background-color:#f8f7ff;
+}
+#overlay{
+	background-color:rgba(0,0,0,0.2);
+}
+#overlayfoot{
+	background-color:rgba(0,0,0,0.4);
+}
